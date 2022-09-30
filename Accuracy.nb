@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     60366,       1151]
-NotebookOptionsPosition[     59745,       1128]
-NotebookOutlinePosition[     60181,       1145]
-CellTagsIndexPosition[     60138,       1142]
+NotebookDataLength[     61942,       1193]
+NotebookOptionsPosition[     60985,       1162]
+NotebookOutlinePosition[     61421,       1179]
+CellTagsIndexPosition[     61378,       1176]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -37,21 +37,35 @@ Cell["Converge of the numerical scheme", "Text",
  ExpressionUUID -> "caa2bfef-d3ae-49a2-9201-2501c36fddb3"],
 
 Cell[TextData[{
- "In the file \[OpenCurlyDoubleQuote]data_Gamma=1._d=1._gamma=0.02_precision \
-_ 20.txt\[CloseCurlyDoubleQuote] we saved dependence of the absorption \
-coefficient ",
+ "In the file \[OpenCurlyDoubleQuote]data.txt\[CloseCurlyDoubleQuote] we \
+saved dependence of the absorption coefficient ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["A", "n"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
- " on the dimensional frequency obtained from the numerical scheme at the \
-different number of functions ",
+   SubscriptBox["A", "n"], TraditionalForm]]],
+ " on the dimensional frequency obtained from the numerical scheme at ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    RowBox[{"n", "=", "1"}], ",", "...", ",", "10"}], TraditionalForm]],
+    OverscriptBox["\[CapitalGamma]", "~"], "=", "1"}], TraditionalForm]],
   FormatType->"TraditionalForm"],
- ". In the figure we we present dependence ",
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["\[Gamma]R", "c"], "=", "0.02"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["d", "~"], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for the different number of functions ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "=", "1"}], ",", "...", ",", "10"}], TraditionalForm]]],
+ ". In the figure we present dependence ",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -59,43 +73,44 @@ different number of functions ",
     RowBox[{
      SubscriptBox["A", "n"], "-", 
      SubscriptBox["A", 
-      RowBox[{"n", "-", "1"}]]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+      RowBox[{"n", "-", "1"}]]}]}], TraditionalForm]]],
  " at ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    RowBox[{"n", "=", "10"}], ",", "8", ",", "6"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    RowBox[{"n", "=", "10"}], ",", "8", ",", "6"}], TraditionalForm]]],
  ". Thus with the number ",
  Cell[BoxData[
-  FormBox["n", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["n", TraditionalForm]]],
  " increasing, difference ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[CapitalDelta]A", "n"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["\[CapitalDelta]A", "n"], TraditionalForm]]],
  " approaches to zero."
 }], "Text",
  CellChangeTimes->{{3.872918276159623*^9, 3.8729184845173903`*^9}, {
-  3.872918635029276*^9, 3.872918674213306*^9}, {3.87291904949842*^9, 
-  3.87291905819701*^9}, {3.8729190903628883`*^9, 3.872919122887998*^9}, {
-  3.8729191537178698`*^9, 3.8729192640127516`*^9}, {3.8729192957648363`*^9, 
-  3.8729193077488785`*^9}, {3.8729193505487986`*^9, 3.8729193609096627`*^9}, {
-  3.8729193943112316`*^9, 3.872919478358571*^9}}],
+   3.872918635029276*^9, 3.872918674213306*^9}, {3.87291904949842*^9, 
+   3.87291905819701*^9}, {3.8729190903628883`*^9, 3.872919122887998*^9}, {
+   3.8729191537178698`*^9, 3.8729192640127516`*^9}, {3.8729192957648363`*^9, 
+   3.8729193077488785`*^9}, {3.8729193505487986`*^9, 
+   3.8729193609096627`*^9}, {3.8729193943112316`*^9, 3.872919478358571*^9}, 
+   3.8735191035588856`*^9, 3.8735191474287796`*^9, {3.8735192163797746`*^9, 
+   3.8735193059453073`*^9}}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"mas", "=", 
    RowBox[{"Get", "[", 
     RowBox[{
-     RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
-     "\"\<data_Gamma=1._d=1._gamma=0.02_precision_20.txt\>\""}], "]"}]}], 
-  ";"}]], "Input",
+     RowBox[{"NotebookDirectory", "[", "]"}], "<>", "\"\<data.txt\>\""}], 
+    "]"}]}], ";"}]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellChangeTimes->{{3.8721386378525515`*^9, 3.8721387788310184`*^9}, {
-  3.8722396790456195`*^9, 3.8722396814005723`*^9}, {3.8725691229059587`*^9, 
-  3.872569131201885*^9}, {3.8725985670045705`*^9, 3.872598567539214*^9}},
+   3.8722396790456195`*^9, 3.8722396814005723`*^9}, {3.8725691229059587`*^9, 
+   3.872569131201885*^9}, {3.8725985670045705`*^9, 3.872598567539214*^9}, 
+   3.8733647820548716`*^9, 3.873519112868413*^9},
  ExpressionUUID -> "9b0cd7bb-9535-4ef5-a4ce-fc3c9b75d657"],
 
 Cell[BoxData[
@@ -134,18 +149,17 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"m", ",", "1", ",", "M"}], "}"}]}], "]"}]}], 
     "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellChangeTimes->{{3.872152331814021*^9, 3.8721523384242196`*^9}, {
-  3.872152372063553*^9, 3.8721523759534283`*^9}, {3.8721524317203193`*^9, 
-  3.872152448876811*^9}, {3.872152942557021*^9, 3.8721529589019012`*^9}, {
-  3.872152990465538*^9, 3.872153058217474*^9}, {3.872153106597767*^9, 
-  3.872153106957057*^9}, {3.8721535207253885`*^9, 3.8721535439587417`*^9}, {
-  3.8721536211942573`*^9, 3.8721536582256055`*^9}, {3.872153761597249*^9, 
-  3.872153794175203*^9}, {3.8721539179694157`*^9, 3.872153921923295*^9}, {
-  3.872154227045059*^9, 3.8721542333015356`*^9}, {3.872916010206348*^9, 
-  3.8729160239869075`*^9}},
+   3.872152372063553*^9, 3.8721523759534283`*^9}, {3.8721524317203193`*^9, 
+   3.872152448876811*^9}, {3.872152942557021*^9, 3.8721529589019012`*^9}, {
+   3.872152990465538*^9, 3.872153058217474*^9}, {3.872153106597767*^9, 
+   3.872153106957057*^9}, {3.8721535207253885`*^9, 3.8721535439587417`*^9}, {
+   3.8721536211942573`*^9, 3.8721536582256055`*^9}, {3.872153761597249*^9, 
+   3.872153794175203*^9}, {3.8721539179694157`*^9, 3.872153921923295*^9}, {
+   3.872154227045059*^9, 3.8721542333015356`*^9}, {3.872916010206348*^9, 
+   3.8729160239869075`*^9}, 3.8733647820560856`*^9},
  ExpressionUUID -> "fdf4c612-1acf-4937-b189-ad6e6bb85f83"],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
@@ -156,52 +170,54 @@ Cell[BoxData[{
      RowBox[{"text", ",", "Italic", ",", "45", ",", 
       RowBox[{"FontFamily", "\[Rule]", "\"\<Times\>\""}]}], "]"}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"acc", "[", 
-      RowBox[{"[", "5", "]"}], "]"}], ",", 
-     RowBox[{"acc", "[", 
-      RowBox[{"[", "7", "]"}], "]"}], ",", 
-     RowBox[{"acc", "[", 
-      RowBox[{"[", "9", "]"}], "]"}]}], "}"}], ",", 
-   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-   RowBox[{"ImageSize", "\[Rule]", "1000"}], ",", 
-   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
-   RowBox[{"TicksStyle", "\[Rule]", 
-    RowBox[{"Directive", "[", 
-     RowBox[{"Black", ",", "Thick"}], "]"}]}], ",", 
-   RowBox[{"LabelStyle", "\[Rule]", 
+ RowBox[{"gr", "=", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{
     RowBox[{"{", 
      RowBox[{
-      RowBox[{"FontSize", "\[Rule]", "30"}], ",", 
-      RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
-      RowBox[{"FontColor", "\[Rule]", "Black"}]}], "}"}]}], ",", 
-   RowBox[{"AxesStyle", "\[Rule]", 
-    RowBox[{"Directive", "[", 
-     RowBox[{
-      RowBox[{"Thickness", "[", "0.002", "]"}], ",", "Black"}], "]"}]}], ",", 
-   RowBox[{"AxesLabel", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{
-      "fl", "[", "\"\<\!\(\*FractionBox[\(\[Omega]R\), \(c\)]\)\>\"", "]"}], 
-      ",", 
-      RowBox[{
-      "fl", "[", "\"\<\!\(\*SubscriptBox[\(\[CapitalDelta]A\), \(n\)]\)\>\"", 
-       "]"}]}], "}"}]}], ",", 
-   RowBox[{"PlotStyle", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{"Thickness", "[", "0.003", "]"}], "}"}]}], ",", 
-   RowBox[{"PlotLegends", "\[Rule]", 
-    RowBox[{"SwatchLegend", "[", 
+      RowBox[{"acc", "[", 
+       RowBox[{"[", "5", "]"}], "]"}], ",", 
+      RowBox[{"acc", "[", 
+       RowBox[{"[", "7", "]"}], "]"}], ",", 
+      RowBox[{"acc", "[", 
+       RowBox[{"[", "9", "]"}], "]"}]}], "}"}], ",", 
+    RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", "1000"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+    RowBox[{"TicksStyle", "\[Rule]", 
+     RowBox[{"Directive", "[", 
+      RowBox[{"Black", ",", "Thick"}], "]"}]}], ",", 
+    RowBox[{"LabelStyle", "\[Rule]", 
      RowBox[{"{", 
       RowBox[{
-      "\"\<\!\(\*SubscriptBox[\(\[CapitalDelta]A\), \(10\)]\)\>\"", ",", 
-       "\"\<\!\(\*SubscriptBox[\(\[CapitalDelta]A\), \(8\)]\)\>\"", ",", 
-       "\"\<\!\(\*SubscriptBox[\(\[CapitalDelta]A\), \(6\)]\)\>\""}], "}"}], 
-     "]"}]}]}], "]"}]}], "Input",
+       RowBox[{"FontSize", "\[Rule]", "30"}], ",", 
+       RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
+       RowBox[{"FontColor", "\[Rule]", "Black"}]}], "}"}]}], ",", 
+    RowBox[{"AxesStyle", "\[Rule]", 
+     RowBox[{"Directive", "[", 
+      RowBox[{
+       RowBox[{"Thickness", "[", "0.002", "]"}], ",", "Black"}], "]"}]}], ",", 
+    RowBox[{"AxesLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+       "fl", "[", "\"\<\!\(\*FractionBox[\(\[Omega]R\), \(c\)]\)\>\"", "]"}], 
+       ",", 
+       RowBox[{
+       "fl", "[", "\"\<\!\(\*SubscriptBox[\(\[CapitalDelta]A\), \(n\)]\)\>\"",
+         "]"}]}], "}"}]}], ",", 
+    RowBox[{"PlotStyle", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"Thickness", "[", "0.003", "]"}], "}"}]}], ",", 
+    RowBox[{"PlotLegends", "\[Rule]", 
+     RowBox[{"SwatchLegend", "[", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<\!\(\*SubscriptBox[\(\[CapitalDelta]A\), \(10\)]\)\>\"", ",", 
+        "\"\<\!\(\*SubscriptBox[\(\[CapitalDelta]A\), \(8\)]\)\>\"", ",", 
+        "\"\<\!\(\*SubscriptBox[\(\[CapitalDelta]A\), \(6\)]\)\>\""}], "}"}], 
+      "]"}]}]}], "]"}]}]}], "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellChangeTimes->{{3.8721538003633385`*^9, 3.8721538961264205`*^9}, {
    3.8721539373293076`*^9, 3.872153938610439*^9}, {3.872154055051716*^9, 
    3.872154079707039*^9}, {3.8721542499729004`*^9, 3.8721542631933265`*^9}, {
@@ -218,7 +234,8 @@ Cell[BoxData[{
    3.872916563654399*^9}, {3.872916601984986*^9, 3.8729166451288605`*^9}, {
    3.8729167092844257`*^9, 3.872916713783383*^9}, {3.8729167704246044`*^9, 
    3.872916773970833*^9}, {3.872917410932994*^9, 3.8729174703078427`*^9}, {
-   3.872917717686926*^9, 3.8729177226857843`*^9}},
+   3.872917717686926*^9, 3.8729177226857843`*^9}, {3.8733647820560856`*^9, 
+   3.8733648040833364`*^9}},
  ExpressionUUID -> "71ce404f-8ea1-433e-a59c-7d4117062141"],
 
 Cell[BoxData[
@@ -1111,6 +1128,7 @@ a6Xc5+Anb3f3NX8u5T4HXxp5zWjbc8rb2fnDnV61eyH9H9tXiyg=
      RowBox[{#, ",", 
        RowBox[{"Placed", "[", 
          RowBox[{#2, ",", "After"}], "]"}]}], "]"}]& )]], "Output",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.},
  CellChangeTimes->{{3.8721544471994734`*^9, 3.872154475811344*^9}, {
    3.8721545068740263`*^9, 3.8721545255927577`*^9}, 3.8722248690244665`*^9, 
    3.872224967619089*^9, {3.872225277728922*^9, 3.8722252862547894`*^9}, 
@@ -1122,8 +1140,24 @@ a6Xc5+Anb3f3NX8u5T4HXxp5zWjbc8rb2fnDnV61eyH9H9tXiyg=
    3.872916398581313*^9}, {3.8729164398870573`*^9, 3.872916457642547*^9}, {
    3.8729165264685187`*^9, 3.8729165662653866`*^9}, {3.8729166224482317`*^9, 
    3.8729166460684853`*^9}, 3.8729167141270638`*^9, 3.8729167743888736`*^9, 
-   3.8729174190432615`*^9, 3.872917475806506*^9, 3.8729177236230507`*^9},
+   3.8729174190432615`*^9, 3.872917475806506*^9, 3.8729177236230507`*^9, {
+   3.8733647820560856`*^9, 3.8733648082401886`*^9}},
  ExpressionUUID -> "314fb56d-175d-46e3-9762-ccddb7cc0500"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", "\"\<accuracy.png\>\""}], 
+   ",", "gr"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8733648118655252`*^9, 3.873364879102505*^9}}],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Admin\\\\YandexDisk\\\\ProjectSLAVA\\\\\
+GatedDisk\\\\Answer\\\\Calculations\\\\accuracy.png\"\>"], "Output",
+ CellChangeTimes->{{3.8733648573979487`*^9, 3.8733648860089846`*^9}}]
 }, Open  ]]
 },
 WindowSize->{1920, 997},
@@ -1146,12 +1180,20 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 1068, 16, 74, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[1629, 38, 1704, 47, 65, "Text"],
-Cell[3336, 87, 511, 11, 39, "Input"],
-Cell[3850, 100, 1856, 45, 90, "Input"],
+Cell[1629, 38, 2013, 59, 78, "Text"],
 Cell[CellGroupData[{
-Cell[5731, 149, 3344, 72, 164, "Input"],
-Cell[9078, 223, 50651, 902, 829, "Output"]
+Cell[3667, 101, 576, 12, 59, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[4246, 115, 1943, 46, 134, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[6192, 163, 3522, 75, 246, "Input",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
+Cell[9717, 240, 50760, 904, 829, "Output",
+ CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[60514, 1149, 240, 6, 76, "Input"],
+Cell[60757, 1157, 212, 2, 50, "Output"]
 }, Open  ]]
 }
 ]
